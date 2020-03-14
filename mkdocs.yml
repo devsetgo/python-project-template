@@ -1,13 +1,12 @@
-
-site_name: DSG_LIB
-# Project information
-site_name: 'DSG_LIB'
-site_description: 'Common functions for Python applications. This is to increase reusability and limit rewritting the same functions in multiple applications. It also allows for defects to be addressed quickly and then be propigated across applications.'
-site_author: 'Martin Donath'
+site_name: 'Python Project Template'
+# Project info
+site_name: 'Python Project Tempaltes'
+site_description: 'A simple template for common Python projects I make'
+site_author: 'Mike Ryan'
 # site_url: 'https://squidfunk.github.io/mkdocs-material/'
 # Repository
-repo_name: 'devsetgo/dsg_lib'
-repo_url: 'https://github.com/devsetgo/dsg_lib'
+repo_name: 'devsetgo/python-project-template'
+repo_url: 'https://github.com/devsetgo/python-project-template'
 
 # Copyright
 copyright: 'Copyright &copy; 2016 - 2020 Mike Ryan'
