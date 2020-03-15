@@ -12,5 +12,6 @@ class Test(unittest.TestCase):
     def test_main(self):
 
         file_name = "test_test"
-        result = main(file_name)
+        sample_size = 100
+        result = main(file_name=file_name, sample_size=sample_size)
         assert result == "complete"

@@ -3,7 +3,7 @@ from pathlib import Path
 import logging
 import sys
 from loguru import logger
-from settings import LOGURU_RETENTION, LOGURU_ROTATION
+from src.settings import LOGURU_RETENTION, LOGURU_ROTATION
 
 
 def config_log():
@@ -17,5 +17,11 @@ def config_log():
         retention=LOGURU_RETENTION,
         compression="zip",
     )
-    logger.add(sys.stderr, format="{level} | {message} ",
-                level="INFO", colorize=True, enqueue=True, backtrace=True)
+    logger.add(
+        sys.stderr,
+        format="{level} | {message} ",
+        level="INFO",
+        colorize=True,
+        enqueue=True,
+        backtrace=True,
+    )
