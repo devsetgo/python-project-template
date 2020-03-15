@@ -11,6 +11,6 @@ time_str = datetime.datetime.now()
 class Test(unittest.TestCase):
     def test_main(self):
 
-        file_name="test_test"
+        file_name = "test_test"
         result = main(file_name)
         assert result == "complete"

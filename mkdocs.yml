@@ -12,25 +12,25 @@ copyright: 'Copyright &copy; 2016 - 2020 Mike Ryan'
 
 nav:
     - Introduction: 'index.md'
-    # - QuickStart: 'quickstart.md'
-    # - FileFunctions: 'file_functions.md'
-    # - FolderFunctions: 'folder_functions.md'
-    # - RegExFunctions: 'regex.md'
-    # - Contributing: 'contribute.md'
+    - QuickStart: 'quickstart.md'
+    - Contributing: 'contributing.md'
+    - ChangeLog: 'changelog.md'
 
 
 
 # Theme
+# palette settings https://squidfunk.github.io/mkdocs-material/getting-started/
 theme:
   name: 'material'
   palette:
-    primary: 'indigo'
+    primary: 'blue grey'
     accent: 'red'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
   logo:
-    icon: 'find_replace'
+    icon: 'cloud'
+  # favicon: 'assets/images/favicon.ico'
   language: 'en'
   plugins:
   - search
@@ -38,6 +38,7 @@ theme:
 # Extensions
 markdown_extensions:
   - admonition
+  - footnotes
   - codehilite:
       guess_lang: false
   - toc:

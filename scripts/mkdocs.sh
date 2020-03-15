@@ -6,7 +6,8 @@ set -x
 mkdocs build
 
 # Copy Contribute to Github Contributing
-cp ~/devsetgo_lib/docs/index.md ~/devsetgo_lib/README.md
-cp ~/devsetgo_lib/docs/contribute.md ~/devsetgo_lib/CONTRIBUTING.md
+cp ~/python-project-template/docs/index.md ~/python-project-template/README.md
+cp ~/python-project-template/docs/contributing.md ~/python-project-template/CONTRIBUTING.md
+cp ~/python-project-template/docs/changelog.md ~/python-project-template/CHANGELOG.md
 
 mkdocs gh-deploy

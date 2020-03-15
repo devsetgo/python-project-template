@@ -11,16 +11,59 @@ Python:
 
 A basic Python project template. Just what I want to start projects with.
 
-### Testing
-Add stuff about testing...
 
-### Project Capabilities
+### Base Stuff
 The things and stuff it does!
 
-- Things
-    - More things
-    - Even more things!
-- Stuff
-    - More stuff
-    - Even more stuff!
+- Bash scripts to handle generic work
+    - install, run test, make docs, flake8, clear cache, autoflake, isort
+    - easy to create a start app bash script
+- requirements folder
+ - requirements.txt references prd.txt
+ - install script installs both prd and dev libraries
+- pre-commit config
+- setup.cfg for pytest, black, isort, flake8,ect..
+- gunicorn config if needed
+- .env_sample for external configuration
+    - cp .env_sample .env 
+- docker
+    - simple dockerfile
+    - docker-compose
 
+
+### Mark Down CheatSheet
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+### Code Block Example
+
+**Python 3**
+```python
+# -*- coding: utf-8 -*-
+"""
+a doc string
+"""
+from devsetgo_lib.file_functions import create_sample_files
+
+
+def main(file_name: str):
+    # start something like test files :-)
+    create_sample_files(file_name, sample_size=100)
+    return "complete"
+
+
+if __name__ == "__main__":
+    # start the main process
+    main()
+```
+
+**JavaScript Example**
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+**No Code Type Indicated Example**
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+```
