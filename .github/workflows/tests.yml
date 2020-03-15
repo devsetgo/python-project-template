@@ -11,24 +11,24 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Python ${{ matrix.python }} version
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@master
       with:
           python-version: ${{ matrix.python }}
           architecture: x64
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        cd app
+        cd src
+        python3 -m pip install --upgrade pip
         pip install -r requirements/dev.txt
     - name: Test with pytest
       run: |
-        cd app
+        cd src
         cp .env_sample .env
         python3 -m pytest
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@master
-      with:
-        token: ${{secrets.CODECOV_TOKEN}}
-        file: ./app/coverage.xml
-        flags: unittests
-        name: codecov-umbrella
+    # - name: Upload coverage to Codecov
+    #   uses: codecov/codecov-action@master
+    #   with:
+    #     token: ${{secrets.CODECOV_TOKEN}}
+    #     file: ./coverage.xml
+    #     flags: unittests
+    #     name: codecov-umbrella

@@ -1,0 +1,17 @@
+# FROM python:3.6-slim-buster
+# FROM python:3.7-slim-buster
+FROM python:3.8-slim-buster
+# if you need gcc uncomment
+# RUN apt-get update && apt-get -y install gcc
+MAINTAINER Mike Ryan "mikeryan56@gmail.com"
+# common port I use
+EXPOSE 5000
+# copy src
+COPY . /src
+WORKDIR /src
+# Evironment Variables
+ENV APP_VERSION='0.0.1'
+
+RUN pip install -r requirements.txt
+CMD ["python3", "main.py"]
+# CMD ["gunicorn",  "-c", "gunicorn_cfg.py", "main:app"]
