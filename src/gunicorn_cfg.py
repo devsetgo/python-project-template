@@ -14,7 +14,7 @@ bind = "0.0.0.0:5000"
 workers = multiprocessing.cpu_count() * 2 + 1
 # Work Class
 # Sync
-worker_class = 'sync'
+worker_class = "sync"
 # Async
 # set worker class to uvicorn
 # worker_class = "uvicorn.workers.UvicornWorker"

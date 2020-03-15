@@ -13,4 +13,4 @@ def main(file_name: str):
 
 if __name__ == "__main__":
     # start the main process
-    main()
+    main("test_file")

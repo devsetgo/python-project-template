@@ -1,0 +1,3 @@
+./src/gunicorn_cfg.py:4:89: E501 line too long (101 > 88 characters)
+./src/gunicorn_cfg.py:26:89: E501 line too long (100 > 88 characters)
+./src/gunicorn_cfg.py:27:89: E501 line too long (109 > 88 characters)

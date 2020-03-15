@@ -25,7 +25,7 @@ The things and stuff it does!
 - setup.cfg for pytest, black, isort, flake8,ect..
 - gunicorn config if needed
 - .env_sample for external configuration
-    - cp .env_sample .env 
+    - cp .env_sample .env
 - docker
     - simple dockerfile
     - docker-compose
@@ -64,6 +64,6 @@ alert(s);
 
 **No Code Type Indicated Example**
 ```
-No language indicated, so no syntax highlighting. 
+No language indicated, so no syntax highlighting.
 But let's throw in a <b>tag</b>.
 ```
