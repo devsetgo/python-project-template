@@ -34,7 +34,7 @@ The things and stuff it does!
 ### Mark Down CheatSheet
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-### Code Block Example
+### Code Block Examples
 
 **Python 3**
 ```python
