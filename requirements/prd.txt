@@ -1,2 +1,3 @@
-devsetgo-lib
-gunicorn
+devsetgo-lib==0.2.0
+gunicorn==20.0.4
+loguru==0.4.1
