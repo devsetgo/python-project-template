@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Configuration of Gunicorn to serve application utilizing Uvicorn
-gunicorn config reference: https://github.com/benoitc/gunicorn/blob/master/examples/example_config.py
+gunicorn config reference:
+https://github.com/benoitc/gunicorn/blob/master/examples/example_config.py
 """
 
 import multiprocessing
@@ -23,8 +24,10 @@ worker_class = "sync"
 loglevel = "info"
 
 """
-A dictionary containing headers and values that the front-end proxy uses to indicate HTTPS requests.
-These tell Gunicorn to set wsgi.url_scheme to https, so your application can tell that the request is secure.
+A dictionary containing headers and values that the front-end proxy uses to
+ indicate HTTPS requests.
+These tell Gunicorn to set wsgi.url_scheme to https, so your application
+ can tell that the request is secure.
 """
 secure_scheme_headers = {
     "X-FORWARDED-PROTOCOL": "ssl",

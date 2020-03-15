@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from pathlib import Path
-import logging
 import sys
 from loguru import logger
 from src.settings import LOGURU_RETENTION, LOGURU_ROTATION
@@ -16,12 +15,4 @@ def config_log():
         rotation=LOGURU_ROTATION,
         retention=LOGURU_RETENTION,
         compression="zip",
-    )
-    logger.add(
-        sys.stderr,
-        format="{level} | {message} ",
-        level="INFO",
-        colorize=True,
-        enqueue=True,
-        backtrace=True,
     )

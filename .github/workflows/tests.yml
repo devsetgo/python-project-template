@@ -21,7 +21,8 @@ jobs:
         pip install -r requirements/dev.txt
     - name: Test with pytest
       run: |
-        cp src/.env_sample src/.env
+        cd src
+        cp .env_sample .env
         python3 -m pytest
     # - name: Upload coverage to Codecov
     #   uses: codecov/codecov-action@master
