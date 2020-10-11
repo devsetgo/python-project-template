@@ -19,7 +19,7 @@ jobs:
         run: echo "$GITHUB_CONTEXT"
       - uses: tiangolo/latest-changes@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.RELEASE_NOTES }}
           latest_changes_file: docs/release-notes.md
           latest_changes_header: '# Release Notes\n\n'
           template_file: ./.github/workflows/release-notes.jinja2
