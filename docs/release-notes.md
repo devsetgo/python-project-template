@@ -1,2 +1,3 @@
 # Release Notes
 
+This changed: error in template file name.. Done by [the GitHub user devsetgo](https://github.com/devsetgo). Check the [Pull Request 7 with the changes and stuff](https://github.com/devsetgo/python-project-template/pull/7).
