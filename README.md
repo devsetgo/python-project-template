@@ -67,3 +67,40 @@ alert(s);
 No language indicated, so no syntax highlighting.
 But let's throw in a <b>tag</b>.
 ```
+
+## Functions
+- Github Actions (templates to start from)
+    - [x] Testing
+    - [x] Docker Release Candidate/Latest
+    - [x] Latest Changes [Repo](https://github.com/tiangolo/latest-changes)
+- Scripts
+    - Repo Scripts
+        - [x] Clear Pycache (not common use but I hated trying to figure it)
+        - [x] MkDocs run/publish
+            - Simplified updating by copying files from docs to readme, contrib and changelog
+    - App Scripts (src/scripts)
+        - [x] Autoflake8 (autoflake.sh) to remove unused imports
+        - [x] Clear PyCache (clear_pycache.sh) if cache issues occur and I hate trying to remember how to do this
+        - [x] Flake8 (flake8.sh) to create report (src/flake8_report)
+        - [x] Install Libraries (install.sh) , inlcuding update pip,setuptools, wheel
+        - [x] Run Isort (isort_run.sh) to organize imports
+        - [x] Reinstall requirements (reinstall_requirements.sh) if errors or corruption happens
+        - [x] Run Tests (tests.sh)
+- Common Capabilites
+    - [x] Logging with Loguru and capture standard Python logging
+    - [x] File functions via [devsetgo_lib](https://github.com/devsetgo/devsetgo_lib)
+    - [x] Dockerfile
+    - [x] Docker-Compose
+    - [x] Setup.cfg for running dev libraries
+    - [x] Gunicorn Configuration template
+    - [x] .gitignore that covers most issues
+    - [x] .dockerignore to prevent tests or other non-core app functions from moving forward
+    - [x] Requirements configuration for testing (dev) and production (prd)
+    - [x] Pre-commit to standardize formatting
+    - [x] MkDocs yaml file for basic configuration (see docs directory)
+    - [x] Started ReadMe, Contribute and Release templates
+    - [x] Settings to import from dotenv files (.env_sample, should be copyied to .env)
+    - [x] Simple Main.py to start with
+    - [x] coverage.py for code coverage
+    - [x] Gitignore file in directories that should not persist data for reports or other data files
+    - [x] SonarCloud configuration file (.sonarcloud.properties)
