@@ -1,4 +1,2 @@
 # Release Notes
 
-* Dev. PR [#9](https://github.com/devsetgo/python-project-template/pull/9) by [@devsetgo](https://github.com/devsetgo).
-This changed: test of the standard template.. Done by [the GitHub user devsetgo](https://github.com/devsetgo). Check the [Pull Request 8 with the changes and stuff](https://github.com/devsetgo/python-project-template/pull/8).This changed: error in template file name.. Done by [the GitHub user devsetgo](https://github.com/devsetgo). Check the [Pull Request 7 with the changes and stuff](https://github.com/devsetgo/python-project-template/pull/7).
