@@ -20,6 +20,8 @@ The things and stuff it does!
     - easy to create a start app bash script
 - requirements folder
  - requirements.txt references prd.txt
+ - SonarCloud Properties
+ - Documents with MkDocs Material
  - install script installs both prd and dev libraries
 - pre-commit config
 - setup.cfg for pytest, black, isort, flake8,ect..
@@ -29,8 +31,14 @@ The things and stuff it does!
 - docker
     - simple dockerfile
     - docker-compose
-
-
+- GitHub Actions
+    - Test
+    - Docker Release Canidate
+    - Docker Latest
+    - Release Drafter
+    - Latest Changes
+    - Dependabot
+- Branching Strategies
 ### Mark Down CheatSheet
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
